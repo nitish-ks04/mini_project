@@ -1,0 +1,38 @@
+
+.hom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: auto;
+    width: screen;
+  }
+  
+  .hom-text {
+    max-width: 800px;
+    text-align: justify;
+    font-weight: bold;
+    color: wheat;
+  }
+  
+  .home-register {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 5px;
+  }
+
+.home-register button {
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .home-register button:hover {
+    background-color: #0056b3;
+  }

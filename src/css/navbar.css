@@ -1,0 +1,30 @@
+.navbar{
+    background-color: aqua;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-brand{
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+}
+.nav-link {
+    padding: 2px;
+    display: flex;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+  
+  .nav-link a:hover {
+    color: #333;
+    text-decoration: underline; 
+  }
+.nav-brand a{
+    text-decoration: none;
+}

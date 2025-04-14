@@ -1,0 +1,31 @@
+/* i come to know a important thing that in React doesn't scope CSS files by default so both the css file cannot have the same as in both the css file or it will cause a conflict in both the file */
+
+.profile-page {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  
+  .image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem; 
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: wheat;
+  }
