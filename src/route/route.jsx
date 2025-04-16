@@ -9,13 +9,14 @@ const Profile = lazy(() => import('../pages/profile'));
 const Home = lazy(() => import('../pages/home'));
 const Regis = lazy(() => import('../pages/regis'));
 const Login = lazy(() => import('../pages/login'));
+const Landing= lazy(() => import('../pages/landing'));
 
 function Approute() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         {/* Public Routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
 
@@ -33,6 +34,14 @@ function Approute() {
           element={
             <ProtectedRoute>
               <Profile />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
             </ProtectedRoute>
           }
         />
