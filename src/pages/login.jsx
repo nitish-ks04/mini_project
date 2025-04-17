@@ -9,7 +9,7 @@ function Login() {
     useEffect(() => {
         const isuser = localStorage.getItem("userInside")
         if (isuser) {
-            navigate("/profile")
+            navigate("/home")
         }
     }, [])
 
@@ -29,18 +29,20 @@ function Login() {
 
         localStorage.setItem("userInside", true);
         localStorage.setItem("currentuser", JSON.stringify(existinguser));
-        navigate("/profile");
+        navigate("/home");
     };
 
     return (
-        <div className="home">
-            <form onSubmit={handleSubmit(handereg)} className="submit-form">
+        <div className="login-home">
+            <form onSubmit={handleSubmit(handereg)} className="login-submit-form">
                 <h2>Login Here</h2>
-                <input type="text" placeholder="Enter your name" className="name-input" {...register("text")} />
-                <input type="password" placeholder="Enter your password" className={`password-input ${errors.pass ? "input-error" : ""}`}{...register("pass", { required: true })} />
-                {errors.pass && (<span className="error-message">This field is required</span>)}
+                <input type="text" placeholder="Enter your name" className="login-name-input" {...register("text")} />
+                <input type="password" placeholder="Enter your password" className={`password-input ${errors.pass ? "login-input-error" : ""}`}{...register("pass", { required: true })} />
+                {errors.pass && (<span className="login-error-message">This field is required</span>)}
                 <button type="submit">Submit</button>
             </form>
+            <div className="login-divider"></div>
+            <div className="login-image"> </div>
         </div>
     );
 

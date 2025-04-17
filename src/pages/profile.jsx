@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import profilePic from "../image/blank-profile-picture-973460.svg";
+import profilePic from "../image/profile-pic.svg";
 import "../css/profile.css"
 
 function Profile() {
@@ -42,6 +42,7 @@ function Profile() {
             <div className="profile-container">
                 <div className="image">
                     <img src={profilePic} alt="your profile pic" />
+                    <p>Welcome Back.</p>
                 </div>
                 <div className="profile-info">
                     <div className="name">Username: {username}</div>
@@ -50,6 +51,11 @@ function Profile() {
                 </div>
             </div>
             <button onClick={handleSignOut}>Sign Out</button>
+            <div className="profile-register">
+                <button onClick={() => navigate("/home")}>Home</button>
+                <button onClick={() => navigate("/abo_us")}>Route </button>
+                <button onClick={() => navigate("/profile")}>Profile </button>
+            </div>
         </div>
     );
 }

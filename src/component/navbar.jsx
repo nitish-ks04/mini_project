@@ -7,7 +7,7 @@ function Navbar(){
                 <a href="/">BMTC</a>
             </div>
             <div className="nav-link">
-                <a href="/home">Home</a>
+                {/* <a href="/home">Home</a> */}
                 <a href="/login">Login</a>
                 <a href="/regis">Sign Up</a>
             </div>

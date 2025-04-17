@@ -1,17 +1,19 @@
-html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 1rem;
-  }
-  
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  /* padding: 1rem; */
+  padding: 0 1rem 0 1rem;
+}

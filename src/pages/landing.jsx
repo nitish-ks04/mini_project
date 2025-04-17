@@ -19,7 +19,8 @@ function Landing() {
             <div className="landing-auth-section">
                 <h2>Get Started</h2>
                 <p>Experience comfortable, reliable, and safe bus transportation services across the country.</p>
-                <p>This project focuses on designing, developing, and simulating an optimized fleet management and routing system for the Bangalore Metropolitan Transport Corporation (BMTC). The primary objective is to enhance fleet utilization and improve overall operational efficiency.</p>
+                <p>This project focuses on designing, developing, and simulating an optimized fleet management and routing system for the Bangalore Metropolitan Transport Corporation (BMTC). </p>
+                <p>The primary objective is to enhance fleet utilization and improve overall operational efficiency.</p>
                 <div className="landing-buttons">
                     <button onClick={() => navigate("/regis")}>Register</button>
                     <button onClick={() => navigate("/login")}>Login</button>

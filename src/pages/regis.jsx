@@ -47,6 +47,8 @@ function Regis() {
                 {errors.pass && (<span className="error-message">This field is required</span>)}
                 <button type="submit">Submit</button>
             </form>
+            <div className="regis-divider"></div>
+            <div className="regis-image"> </div>
         </div>
     );
 }

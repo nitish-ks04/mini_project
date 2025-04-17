@@ -25,6 +25,11 @@ function About_us() {
                 {errors.time && <span className="about-error-message">This field is required</span>}
                 <button type="submit">Submit</button>
             </form>
+            <div className="about-register">
+                <button onClick={() => navigate("/home")}>Home</button>
+                <button onClick={() => navigate("/abo_us")}>Route </button>
+                <button onClick={() => navigate("/profile")}>Profile </button>  
+            </div>
         </div>
     );
 }
