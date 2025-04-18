@@ -18,6 +18,7 @@ function About_us() {
 
     return (
         <div className="about-home">
+            <div className="about-im"></div>
             <form onSubmit={handleSubmit(handereg)} className="about-form">
                 <h2>Enter the route and bus timing </h2>
                 <input type="text" placeholder="Enter Bus route" className="about-text" {...register("text")} />

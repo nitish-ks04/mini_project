@@ -1,12 +1,51 @@
-
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/home.css"
+import Firstillus from "../image/first-illus.svg"
+import secondillus from "../image/Bus.jpg"
 function Home() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const features = [
+        "Real-time tracking of buses",
+        "Dynamic route optimization",
+        "Passenger demand forecasting",
+        "Fleet performance analytics",
+        "User-friendly interface for operators",
+    ];
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % features.length);
+    };
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + features.length) % features.length);
+    };
     const navigate = useNavigate();
     return (
         <div className="hom">
-            <div className="hom-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo officia nostrum incidunt dolor consectetur ratione quia aperiam tempora et tenetur ipsa facere, tempore cum adipisci blanditiis. Facere dolorum officiis sunt explicabo quidem nesciunt laboriosam recusandae, minima quos fugit ad amet sint suscipit temporibus nobis incidunt sed numquam, non omnis et quaerat aspernatur ducimus! Minima repellendus impedit fugiat magni eum ea blanditiis consequatur asperiores esse adipisci id aspernatur necessitatibus fugit aliquam voluptates delectus, tenetur eligendi incidunt est! Pariatur commodi eos temporibus voluptate, quo placeat maxime deleniti est dolore eveniet iste provident officiis praesentium vitae rem nihil similique, odio molestiae mollitia ipsum quas quasi magnam hic expedita! Repudiandae suscipit, dicta distinctio dolorem eos sapiente adipisci. Facere quo hic cum totam eligendi quisquam quidem obcaecati corrupti, quod ullam animi, cumque natus minima necessitatibus? Blanditiis, officiis ratione modi natus autem aliquid corrupti quaerat minus voluptatibus magnam veritatis, voluptatum quisquam eaque rerum accusamus. Iste aliquam blanditiis ipsa sint rerum accusamus ex iure recusandae, facere cum magnam delectus architecto unde atque. Nobis nulla provident explicabo facere veritatis nam enim minus voluptate nesciunt, perspiciatis aliquam totam hic repudiandae, commodi sed molestias. Quae magni id similique quidem esse porro assumenda consequatur quod! Vero ipsum nam commodi quas quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat quas illum ea esse commodi in neque, aperiam consequatur atque incidunt error accusamus ducimus magni sunt! Repellendus voluptates commodi quo pariatur at.
+            <div className="first-lay">
+                <div className="hom-text">
+                    <h2>BMTC Fleet Management  & Routing</h2>
+                    This project focuses on designing, developing, and simulating an optimized fleet management and routing system for the Bangalore Metropolitan Transport Corporation (BMTC).
+                </div>
+                <div className="first-illu">
+                    <img src={Firstillus} alt="first illustration" />
+                </div>
+            </div>
+            <div className="second-lay">
+                <div className="second-text">
+                    The primary objective is to enhance fleet utilization and improve overall operational efficiency. The system integrates real-time passenger demand data, traffic conditions, and fleet performance metrics to dynamically allocate buses and optimize routes
+                </div>
+                <div className="second-illu">
+                    <img src={secondillus} alt="second illustration" />
+                </div>
+            </div>
+            <div className="third-lay">
+                <h2>Feature</h2>
+                <div className="third-text">
+                    <button className="arrow-btn" onClick={handlePrev}>←</button>
+                    <div className="feature-text">{features[currentIndex]}</div>
+                    <button className="arrow-btn" onClick={handleNext}>→</button>
+                </div>
             </div>
             <div className="home-register">
                 <button onClick={() => navigate("/home")}>Home</button>

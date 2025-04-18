@@ -1,18 +1,17 @@
 .hom {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Pushes top and bottom content apart */
   align-items: center;
   padding: 2rem;
   min-height: 80vh; 
   background-color: #ffffff; 
+  gap: 20px;
 }
 
-.hom-text {
-  max-width: 800px;
-  text-align: justify;
-  font-weight: bold;
-  color: wheat;
+.hom h2{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e9f914;
 }
 
 @keyframes slideInUp {
@@ -67,3 +66,135 @@
   transform: scale(1.1);
 }
 
+.first-lay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;       
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f1eeee;
+}
+
+.hom-text {
+  flex: 1;                   
+  max-width: 60%;
+  text-align: justify;
+  font-weight: bold;
+  color: #333;
+}
+
+.first-illu {
+  flex-shrink: 0;            
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-illu img {
+  height: 200px;
+  width: auto;               
+}
+
+.second-lay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;       
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f1eeee;
+}
+.second-text {
+  flex: 1;                   
+  max-width: 60%;
+  text-align: justify;
+  font-weight: bold;
+  color: #333;
+}
+
+.second-illu {
+  flex-shrink: 0;            
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-illu img {
+  height: 200px;
+  width: auto;               
+}
+
+.third-lay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;       
+  gap: 14rem;
+  padding: 2rem;
+  background-color: #f1eeee;
+}
+
+.third-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  min-width: 300px;
+}
+
+.arrow-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .first-lay {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hom-text {
+    max-width: 100%;
+  }
+  .second-lay {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-text {
+    max-width: 100%;
+  }
+
+  .third-lay {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .third-text {
+    max-width: 100%;
+  }
+}

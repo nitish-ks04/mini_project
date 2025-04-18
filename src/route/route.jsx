@@ -9,7 +9,8 @@ const Profile = lazy(() => import('../pages/profile'));
 const Home = lazy(() => import('../pages/home'));
 const Regis = lazy(() => import('../pages/regis'));
 const Login = lazy(() => import('../pages/login'));
-const Landing= lazy(() => import('../pages/landing'));
+const Landing = lazy(() => import('../pages/landing'));
+const Dock = lazy(() => import('../component/dock/DockComponent'));
 
 function Approute() {
   return (

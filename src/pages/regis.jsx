@@ -11,7 +11,7 @@ function Regis() {
     useEffect(() => {
         const isuser = localStorage.getItem("userInside");
         if (isuser) {
-            navigate("/profile")
+            navigate("/home")
         }
     }, [])
 
@@ -33,7 +33,7 @@ function Regis() {
         localStorage.setItem("users", JSON.stringify(users))
         localStorage.setItem("userInside", true)
         localStorage.setItem("currentuser", JSON.stringify(newuser));
-        navigate("/profile")
+        navigate("/home")
     }
 
     return (
