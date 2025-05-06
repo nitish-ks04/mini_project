@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import profilePic from "../image/profile-pic.svg";
 import "../css/profile.css"
-
+import NavButton from "../component/nav_butt";
 function Profile() {
 
     useEffect(() => {
@@ -51,11 +51,7 @@ function Profile() {
                 </div>
             </div>
             <button onClick={handleSignOut}>Sign Out</button>
-            <div className="profile-register">
-                <button onClick={() => navigate("/home")}>Home</button>
-                <button onClick={() => navigate("/abo_us")}>Route </button>
-                <button onClick={() => navigate("/profile")}>Profile </button>
-            </div>
+           <NavButton/>
         </div>
     );
 }

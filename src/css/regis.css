@@ -31,7 +31,7 @@
 
 .submit-form button {
   padding: 0.7rem;
-  background-color: #007bff;
+  background-color: #2A9D8F;
   color: white;
   border: none;
   border-radius: 6px;
@@ -48,7 +48,7 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  color: #68732f;
+  color: #166e64;
 }
 
 .error-message {

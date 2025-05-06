@@ -41,8 +41,25 @@ function Regis() {
             <form onSubmit={handleSubmit(handelReg)} className="submit-form">
                 <h2>Register </h2>
                 <input type="text" placeholder="Enter your name" className="name-input" {...register("text")} />
-                <input type="tel" placeholder="Enter your phone number" className="phone-input" {...register("ph")} />
-                <input type="email" placeholder="Enter your email" className="email-input" {...register("mail")} />
+                <input type="tel" placeholder="Enter your phone number" className="phone-input" {...register("ph", {
+                    required: "Phone number is required",
+                    pattern: {
+                        value: /^[6-9]\d{9}$/,
+                        message: "Enter a valid 10-digit phone number",
+                    },
+                })}
+                />
+                {errors.ph && <span className="error-message">{errors.ph.message}</span>}
+
+                <input type="email" placeholder="Enter your email" className="email-input" {...register("mail", {
+                    required: "Email is required",
+                    pattern: {
+                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                        message: "Enter a valid email address",
+                    },
+                })}
+                />
+                {errors.mail && <span className="error-message">{errors.mail.message}</span>}
                 <input type="password" placeholder="Enter your password" className={`password-input ${errors.pass ? "input-error" : ""}`}{...register("pass", { required: true })} />
                 {errors.pass && (<span className="error-message">This field is required</span>)}
                 <button type="submit">Submit</button>

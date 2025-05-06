@@ -1,24 +1,25 @@
-.fott{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#cdcd25;
-
+.fott {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3e50;
+  color: #fff;
 }
 .fott a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    margin: 4px;
-  }
-  
-  .fott a:hover {
-    color: #333;
-    text-decoration: underline; 
-  }
-  .copy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#cdcd25;
-  }
+  text-decoration: none;
+  color: #2a9d8f;
+  font-weight: 500;
+  margin: 4px;
+}
+
+.fott a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.copy {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3e50;
+}

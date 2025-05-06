@@ -11,6 +11,7 @@ const Regis = lazy(() => import('../pages/regis'));
 const Login = lazy(() => import('../pages/login'));
 const Landing = lazy(() => import('../pages/landing'));
 const Dock = lazy(() => import('../component/dock/DockComponent'));
+const Output =lazy(()=> import("../pages/output"))
 
 function Approute() {
   return (
@@ -46,7 +47,14 @@ function Approute() {
             </ProtectedRoute>
           }
         />
-
+        <Route
+          path="/output"
+          element={
+            <ProtectedRoute>
+              <Output/>
+            </ProtectedRoute>
+          }
+        />
         {/* Catch-All Error Route */}
         <Route path="*" element={<Error />} />
       </Routes>

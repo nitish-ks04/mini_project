@@ -4,66 +4,15 @@
   align-items: center;
   padding: 2rem;
   min-height: 80vh; 
-  background-color: #ffffff; 
+  background-color: #F5F7FA; 
   gap: 20px;
+  color: #333333;
 }
 
 .hom h2{
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #e9f914;
-}
-
-@keyframes slideInUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes slideOutDown {
-  from {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-.home-register {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  backdrop-filter: blur(1px);
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  z-index: 1000;
-  animation: slideInUp 0.5s ease-out forwards;
-}
-
-.home-register button {
-  padding: 0.6rem 1.2rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.home-register button:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
+  color: #166e64;
 }
 
 .first-lay {
@@ -73,7 +22,7 @@
   align-items: center;       
   gap: 2rem;
   padding: 2rem;
-  background-color: #f1eeee;
+  background-color: #FFFFFF;
 }
 
 .hom-text {
@@ -103,7 +52,7 @@
   align-items: center;       
   gap: 2rem;
   padding: 2rem;
-  background-color: #f1eeee;
+  background-color: #FFFFFF;
 }
 .second-text {
   flex: 1;                   
@@ -132,7 +81,7 @@
   align-items: center;       
   gap: 14rem;
   padding: 2rem;
-  background-color: #f1eeee;
+  background-color: #FFFFFF;
 }
 
 .third-text {
@@ -156,7 +105,7 @@
 }
 
 .arrow-btn {
-  background-color: #007bff;
+  background-color: #2A9D8F;
   border: none;
   color: white;
   font-size: 1.5rem;
